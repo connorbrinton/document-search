@@ -1,7 +1,7 @@
 [project]
 name = "document-search"
 version = "0.1.0"
-description = "Demo searching documents using Cohere's embedding endpoints"
+description = "Search OmniAI's OCR benchmark dataset using text embeddings"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [

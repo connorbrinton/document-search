@@ -51,7 +51,7 @@ def _cli() -> None:
         image_array = np.asarray(image)
 
         # Hash the image into a key for our cache
-        image_hash = hashlib.blake2b(image_array).digest()
+        image_hash = hashlib.blake2b(image_array.tobytes()).digest()
 
         # Attempt to use a cached embedding
         if image_hash in cache:
